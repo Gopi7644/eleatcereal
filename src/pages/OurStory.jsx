@@ -4,7 +4,6 @@ import { storyquotes } from "../data/ourStoryData";
 import { cerealData } from "../data/ourStoryData";
 import OurStoryComp from "../components/OurStoryComp";
 import { Link } from "react-router-dom";
-import Footer from "../components/Footer";
 import HomeInsta from "../components/HomeInsta";
 
 const OurStory = () => {
@@ -173,7 +172,6 @@ const OurStory = () => {
       </div>
 
       <HomeInsta />
-      <Footer />
     </div>
   );
 };

@@ -1,19 +1,30 @@
 import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Header from "./components/Header";
 import Home from "./pages/Home";
 import OurStory from "./pages/OurStory";
-import ReviewCard from "./components/ReviewCard";
 import AccountLogin from "./pages/AccountLogin";
 import Layout from "./components/Layout";
 import CardAside from "./pages/CardAside";
+import Error from "./components/Error";
+import Locator from "./pages/Locator";
+import ReviewSection from "./components/ReviewSection";
 import Refer from "./pages/Refer";
 import BundleCards from "./components/BundleCards";
-import ReviewSection from "./components/ReviewSection";
-import Locator from "./pages/Locator";
-
 
 function App() {
+  // return (
+  //   <>
+  //     <Header />
+  //     <Routes>
+
+  //       <Route path="*" element={<Home />} />
+  //       <Route path="/our-story" element={<OurStory />} /> 
+  //       <Route path="/reviews" element={<ReviewCard/>}/>
+  //       <Route path="/account-login" element={<AccountLogin/>}/>
+  //       {/* <Route path="/card-aside" element={<CardAside/>}/> */}
+  //     </Routes>
+  //   </>
+  // );
   const router = createBrowserRouter([
     {
       path: "/",
@@ -36,20 +47,20 @@ function App() {
           element: <AccountLogin />,
         },
         {
-          path: "/card-aside",
-          element: <CardAside />,
-        },
-        {
-          path: "/locator",
-          element: <Locator />,
-        },
-        {
           path: "/refer",
           element: <Refer />,
         },
         {
+          path: "/card-aside",
+          element: <CardAside />,
+        },
+        {
           path: "/bundle",
           element: <BundleCards />,
+        },
+        {
+          path: "/locator",
+          element: <Locator />,
         },
         {
           path: "*",

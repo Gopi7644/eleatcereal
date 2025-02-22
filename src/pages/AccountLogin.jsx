@@ -1,7 +1,6 @@
 import React from "react";
 import { useState } from "react";
 import HomeInsta from "../components/HomeInsta";
-import Footer from "../components/Footer";
 
 const AccountLogin = () => {
   const [email, setEmail] = useState("");
@@ -71,7 +70,6 @@ const AccountLogin = () => {
         </div>
       </div>
       <HomeInsta />
-      <Footer />
     </>
   );
 };

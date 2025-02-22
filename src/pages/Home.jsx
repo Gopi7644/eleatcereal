@@ -7,7 +7,7 @@ import eleatbenifite from "../data/eleatbenifite";
 import ProductTestimonial from "../components/ProductTestimonial";
 import AboutUsSection from "../components/AboutUsSection.jsx";
 import HomeInsta from "../components/HomeInsta.jsx";
-import Footer from "../components/Footer.jsx";
+
 
 const Home = () => {
   return (
@@ -25,7 +25,6 @@ const Home = () => {
       <ProductTestimonial />
       <AboutUsSection />
       <HomeInsta />
-      <Footer/>
     </div>
   );
 };
