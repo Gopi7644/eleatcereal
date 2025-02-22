@@ -12,19 +12,7 @@ import Refer from "./pages/Refer";
 import BundleCards from "./components/BundleCards";
 
 function App() {
-  // return (
-  //   <>
-  //     <Header />
-  //     <Routes>
-
-  //       <Route path="*" element={<Home />} />
-  //       <Route path="/our-story" element={<OurStory />} /> 
-  //       <Route path="/reviews" element={<ReviewCard/>}/>
-  //       <Route path="/account-login" element={<AccountLogin/>}/>
-  //       {/* <Route path="/card-aside" element={<CardAside/>}/> */}
-  //     </Routes>
-  //   </>
-  // );
+  
   const router = createBrowserRouter([
     {
       path: "/",
@@ -53,6 +41,10 @@ function App() {
         {
           path: "/card-aside",
           element: <CardAside />,
+        },
+        {
+          path: "/products/5-variety-pack",
+          element: <Home />,
         },
         {
           path: "/bundle",
