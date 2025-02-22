@@ -74,13 +74,13 @@ const OurStory = () => {
                 Ready to fuel with ELEAT?
               </p>
 
-              <a href="/products/5-variety-pack">
+              <Link to="/products/5-variety-pack">
                 <button className="relative group p-4">
                   <div className="font-medium relative z-10  bg-black text-white py-3 px-6 rounded-full hover:bg-gray-800">
                     SHOP NOW
                   </div>
                 </button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
